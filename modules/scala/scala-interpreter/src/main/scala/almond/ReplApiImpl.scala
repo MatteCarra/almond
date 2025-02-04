@@ -241,7 +241,7 @@ final class ReplApiImpl(
           tcolors,
           classTagT
         ).getOrElse {
-          super.print(value, ident, custom)(tprint, tcolors, classTagT)
+          super.print(value, ident, custom)(using tprint, tcolors, classTagT)
         }
     }
 }

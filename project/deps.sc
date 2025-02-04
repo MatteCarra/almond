@@ -2,7 +2,7 @@ import mill._
 import mill.scalalib._
 
 object Versions {
-  def ammonite      = "3.0.0-M2-30-486378af"
+  def ammonite      = "3.0.1"
   def caseApp       = "2.1.0-M26"
   def coursier      = "2.1.14"
   def jsoniterScala = "2.13.5"
@@ -75,27 +75,14 @@ object Deps {
 }
 
 object ScalaVersions {
-  def scala3Latest   = "3.4.2"
-  def scala3Compat   = "3.3.0"
+  def scala3Latest   = "3.6.2"
+  def scala3Compat   = "3.6.2"
   def scala213       = "2.13.14"
   def scala212       = "2.12.19"
-  val binaries       = Seq(scala3Compat, scala213, scala212)
+  val binaries       = Seq("3.6.2")
   val scala2Binaries = Seq(scala213, scala212)
   val all = Seq(
-    scala3Latest,
-    "3.3.3",
-    "3.3.2",
-    "3.3.1",
-    scala3Compat,
-    scala213,
-    "2.13.13",
-    "2.13.12",
-    "2.13.11",
-    "2.13.10",
-    scala212,
-    "2.12.18",
-    "2.12.17",
-    "2.12.16"
+    "3.6.2",
   ).distinct
 
   def binary(sv: String) =
