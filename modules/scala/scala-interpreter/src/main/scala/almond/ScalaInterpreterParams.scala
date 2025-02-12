@@ -6,7 +6,7 @@ import almond.directives.KernelOptions
 import almond.launcher.directives.CustomGroup
 import almond.protocol.KernelInfo
 import ammonite.compiler.iface.CodeWrapper
-import ammonite.compiler.CodeClassWrapper
+import ammonite.compiler.DefaultCodeWrapper
 import ammonite.util.Colors
 import coursierapi.{Dependency, Module}
 
@@ -23,7 +23,7 @@ final case class ScalaInterpreterParams(
   automaticVersions: Map[Module, String] = Map(),
   forceMavenProperties: Map[String, String] = Map(),
   mavenProfiles: Map[String, Boolean] = Map(),
-  codeWrapper: CodeWrapper = CodeClassWrapper,
+  codeWrapper: CodeWrapper = DefaultCodeWrapper,
   initialColors: Colors = Colors.Default,
   initialClassLoader: ClassLoader = Thread.currentThread().getContextClassLoader,
   metabrowse: Boolean = false,

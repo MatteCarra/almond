@@ -159,7 +159,7 @@ object ScalaKernel extends CaseApp[Options] {
         automaticVersions = autoVersions,
         forceMavenProperties = forceProperties,
         mavenProfiles = mavenProfiles,
-        codeWrapper = ammonite.compiler.CodeClassWrapper,
+        codeWrapper = ammonite.compiler.DefaultCodeWrapper,
         initialColors = initialColors,
         initialClassLoader = initialClassLoader,
         metabrowse = options.metabrowse,
